@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Quiz</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+
+  .quiz-container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .question {
+    margin-bottom: 25px;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  label:hover {
+    background-color: #e0e0e0;
+  }
+
+  button {
+    padding: 12px 25px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+  }
+
+  button:hover {
+    background: #45a049;
+  }
+
+  #out {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>India Quiz</h2>
+    <form id="quizForm">
+      
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. What is the capital of India?</p>
+        <label><input type="radio" name="q1" value="New Delhi"> New Delhi</label>
+        <label><input type="radio" name="q1" value="Mumbai"> Mumbai</label>
+        <label><input type="radio" name="q1" value="Kolkata"> Kolkata</label>
+        <label><input type="radio" name="q1" value="Chennai"> Chennai</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. Which is the national animal of India?</p>
+        <label><input type="radio" name="q2" value="Tiger"> Tiger</label>
+        <label><input type="radio" name="q2" value="Elephant"> Elephant</label>
+        <label><input type="radio" name="q2" value="Lion"> Lion</label>
+        <label><input type="radio" name="q2" value="Peacock"> Peacock</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. Who was the first Prime Minister of India?</p>
+        <label><input type="radio" name="q3" value="Jawaharlal Nehru"> Jawaharlal Nehru</label>
+        <label><input type="radio" name="q3" value="Mahatma Gandhi"> Mahatma Gandhi</label>
+        <label><input type="radio" name="q3" value="Sardar Patel"> Sardar Patel</label>
+        <label><input type="radio" name="q3" value="Indira Gandhi"> Indira Gandhi</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. Which river is known as the longest river in India?</p>
+        <label><input type="radio" name="q4" value="Ganga"> Ganga</label>
+        <label><input type="radio" name="q4" value="Yamuna"> Yamuna</label>
+        <label><input type="radio" name="q4" value="Godavari"> Godavari</label>
+        <label><input type="radio" name="q4" value="Brahmaputra"> Brahmaputra</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. What is the national bird of India?</p>
+        <label><input type="radio" name="q5" value="Peacock"> Peacock</label>
+        <label><input type="radio" name="q5" value="Sparrow"> Sparrow</label>
+        <label><input type="radio" name="q5" value="Crow"> Crow</label>
+        <label><input type="radio" name="q5" value="Parrot"> Parrot</label>
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+
+    <div id="out"></div>
+  </div>
+
+
+   <script src="quize-app.js"></script>
+</body>
+</html>
